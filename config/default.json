@@ -1,0 +1,37 @@
+{
+  "application": {
+    "domain": "http://localhost:6868",
+    "apiUrl": "http://localhost:6868",
+    "host": "localhost",
+    "port": 6868,
+    "secret": "thanktriips",
+    "tokenExpiresIn": 2592000,
+    "activeTokenExpiresIn": 86400,
+    "maxDistance": 2000,
+    "reportError": false,
+    "version": "2.2.4",
+    "requiredUpdate": false
+  },
+  "mongo": {
+    "uri": "mongodb://localhost/thanktriips-auth",
+    "options": {
+      "autoIndex": true,
+      "reconnectTries": 100,
+      "reconnectInterval": 500,
+      "poolSize": 10,
+      "bufferMaxEntries": 0
+    },
+    "debug": true
+  },
+  "redis": {
+    "connect": {
+      "host": "localhost",
+      "port": 6379
+    },
+    "db": {
+      "traveller": 0,
+      "trip": 0,
+      "mqtt": 0
+    }
+  }
+}
